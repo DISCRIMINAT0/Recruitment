@@ -41,7 +41,7 @@ export default async function DashboardLayout({
     )
 
     await supabase.auth.signOut()
-    redirect("/login")
+    redirect("/auth/login")
   }
 
   return (
